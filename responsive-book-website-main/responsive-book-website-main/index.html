@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/store-line.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Artisan Avenue</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               ARTISAN AVENUE
+            </a>
+            <div class="nav__menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link">
+                        <i class="ri-home-line"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#inspiration" class="nav__link">
+                        <i class="ri-community-line"></i>
+                        <span>Inspiration</span>
+                     </a>
+                  </li><li class="nav__item">
+                     <a href="#shop" class="nav__link">
+                        <i class="ri-store-3-line"></i>
+                        <span>Shop</span>
+                     </a>
+                  </li><li class="nav__item">
+                     <a href="#about" class="nav__link">
+                        <i class="ri-user-line"></i>
+                        <span>About</span>
+                     </a>
+                  </li><li class="nav__item">
+                     <a href="#contactus" class="nav__link">
+                        <i class="ri-mail-send-line"></i>
+                        <span>Contact Us</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search Button -->
+               <i class="ri-search-2-line search-button" id="search-button"></i>
+
+               <!-- Login Button -->
+               <i class="ri-user-3-line login-button" id="login-button"></i>
+
+               <!-- Theme Button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="ri-search-2-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+         <i class="ri-close-fill search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+            
+            <div class="login__group grid">
+               <div>
+                  <label for="login-email" class="login__label">E-Mail</label>
+                  <input type="email" placeholder="Enter your E-Mail: " id="login-email" class="login__input">
+               </div>
+
+               <div>
+                  <label for="login-pass" class="login__label">Password</label>
+                  <input type="password" placeholder="Enter your Password" id="login-pass" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <span class="login__signup">
+                  Don't have an account ?<a href="#">Sign Up</a>
+               </span>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+
+               <button type="submit" class="login__button button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h1 class="home__title">
+                     Welcome To Artisan Avenue
+                  </h1>
+                  <p class="home__description">
+                     <br><br>A place
+                     where art comes to life and stories 
+                     unfold. We believe that every 
+                     piece of art has a tale to tell, and 
+                     we're here to provide a platform 
+                     for local businesses to showcase 
+                     their unique stories through 
+                     captivating displays.<br><br>Each stroke of the brush, every carefully sculpted form, 
+                     and the vibrant colors tell a story that transcends time and space. From 
+                     contemporary masterpieces to traditional crafts, our diverse selection 
+                     reflects the rich tapestry of local artistic expression.
+                  </p>
+
+                  <a href="#" class="button">Explore Now</a>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-1.png" alt="image1" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-2.png" alt="image2" class="home__img">
+                        </article>
+                        
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-3.png" alt="image3" class="home__img">
+                        </article>
+                        
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-4.png" alt="image4" class="home__img">
+                        </article>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-truck-line"></i>
+                  <h3 class="services__title">Free Shipping*</h3>                  
+                  <p class="services__description">* On orders above $10</p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-secure-payment-fill"></i>
+                  <h3 class="services__title">Secure Payments</h3>
+                  <p class="services__description">100% Secured Payments</p>
+               </article>
+               
+               <article class="services__card">
+                  <i class="ri-customer-service-2-line"></i>
+                  <h3 class="services__title">Fast Customer Support</h3>
+                  <p class="services__description">24/7 E-Mail Support</p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Featured Art
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-1.png" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-2.png" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-3.png" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-4.png" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-5.png" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/book-6.png" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <!--==================== DISCOUNT ====================-->
+         <section class="discount section" id="discount">
+            
+         </section>
+
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
