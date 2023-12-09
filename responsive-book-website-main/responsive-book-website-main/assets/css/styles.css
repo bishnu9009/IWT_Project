@@ -107,13 +107,46 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme{
+  --title-color: hsl(230, 48%, 85%);
+  --text-color: hsl(230, 16%, 70%);
+  --border-color: hsl(230, 12%, 18%);
+  --body-color: hsl(230, 12%, 8%);
+  --container-color: hsl(230, 12%, 12%);
+}
 
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
+.dark-theme .shadow-header{
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .4);
+}
 
+.dark-theme .nav__menu{
+  box-shadow: 0 -8px 32px hsla(0, 0%, 0%, .4);
+}
+
+.dark-theme .scrollup{
+  box-shadow: 0 2px 8px hsla(0, 0%, 0%, .4);
+}
+
+.dark-theme .search,
+.dark-theme .login{
+  background: hsla(230, 12%, 96%, .6);
+}
+
+.dark-theme::-webkit-scrollbar{
+  background-color: hsl(0, 0%, 100%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(0, 0%, 85%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(0, 0%, 60%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -221,7 +254,9 @@ img {
 
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /*=============== SEARCH ===============*/
 .search{
@@ -599,7 +634,7 @@ img {
   margin-bottom: 2rem;
 }
 /*=============== JOIN ===============*/
-.join{
+.join__container{
   position: relative;
   padding-block: 3rem;
 }
@@ -647,16 +682,105 @@ img {
 
 
 /*=============== FOOTER ===============*/
+.footer{
+  padding-block: 4rem 6rem;
+}
 
+.footer__container{
+  row-gap: 3rem;
+}
+
+.footer__logo{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 1.25rem;
+}
+
+.footer__logo i{
+  font-size: 1.25rem;
+}
+
+.footer__data{
+  grid-template-columns: repeat(2,max-content);
+  gap: 3rem 2rem;
+}
+
+.footer__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.footer__links{
+  display: grid;
+  row-gap: .5rem;
+}
+
+.footer__link{
+  columns: var(--text-color);
+  transition: color .4s;
+}
+
+.footer__link:hover{
+  color: var(--first-color);
+}
+
+.footer__info{
+  font-style: normal;
+}
+
+.font__social{
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.font__social-link{
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(230, 16%, 85%);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: hsl(230, 16%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(230, 16%, 55%);
+}
 
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 8px hsl(0, 0, 0,.1);
+  padding: 6px;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s,transform .4s,background-color .4s;
+}
 
+.scrollup:hover{
+  transform: translate(-.5rem);
+}
 
 /* Show Scroll Up */
-
+.show-scroll{
+  bottom: 6rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
