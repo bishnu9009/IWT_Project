@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/store-line.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Artisan Avenue</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> ARTISAN AVENUE </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#inspiration" class="nav__link">
+                <i class="ri-community-line"></i>
+                <span>Inspiration</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#shop" class="nav__link">
+                <i class="ri-store-3-line"></i>
+                <span>Shop</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="ri-user-line"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contactus" class="nav__link">
+                <i class="ri-mail-send-line"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Search Button -->
+          <i class="ri-search-2-line search-button" id="search-button"></i>
+
+          <!-- Login Button -->
+          <i class="ri-user-3-line login-button" id="login-button"></i>
+
+          <!-- Theme Button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search-content">
+      <form action="" class="search__form">
+        <i class="ri-search-2-line search__icon"></i>
+        <input
+          type="search"
+          placeholder="What are you looking for?"
+          class="search__input"
+        />
+      </form>
+      <i class="ri-close-fill search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login grid" id="login-content">
+      <form action="" class="login__form grid">
+        <h3 class="login__title">Log In</h3>
+
+        <div class="login__group grid">
+          <div>
+            <label for="login-email" class="login__label">E-Mail</label>
+            <input
+              type="email"
+              placeholder="Enter your E-Mail: "
+              id="login-email"
+              class="login__input"
+            />
+          </div>
+
+          <div>
+            <label for="login-pass" class="login__label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="login-pass"
+              class="login__input"
+            />
+          </div>
+        </div>
+
+        <div>
+          <span class="login__signup">
+            Don't have an account ?<a href="#">Sign Up</a>
+          </span>
+
+          <a href="#" class="login__forgot">Forgot Password?</a>
+
+          <button type="submit" class="login__button button">Log In</button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">PATTACHITRA PAINTINGS</h1>
+            <div align="center">
+              <img
+                src="assets/img/pattachitra paintings/OPC-001-RK-DASHAVATARA-BW-S1-2.jpg.webp"
+                alt="img"
+                class="inspo_img"
+                height="600"
+                width="450"
+              />
+            </div>
+            <div class="inspo_para">
+              <br />
+              <p>
+                Pattachitra or Patachitra, another traditional art form of India, is a common term for contemporary, cloth-based scroll painting based in the East Indian states of Odisha and West Bengal. 
+                The name Pattachitra is adapted from the Sanskrit language, patta, implying canvas, and Chitra, meaning image. 
+                Therefore, Pattachitra is a painting rendered on canvas, illustrated by the affluent colorful display, imaginative motifs, and designs, and a representation of cardinal themes, often mythological in the portrayal.
+              </p>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/pattachitra paintings/OPC-KRISHNASTORY-COL-S1-4.jpg.webp"
+                    alt="image1"
+                    class="home__img"
+                  />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/pattachitra paintings/OPC-TOL-BUDHA-2-2.jpg.webp"
+                    alt="image2"
+                    class="home__img"
+                  />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/pattachitra paintings/OPC-TOL-KRISHNA-5-2.jpg.webp"
+                    alt="image3"
+                    class="home__img"
+                  />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img
+                    src="assets/img/pattachitra paintings/OPC-TOL-NABAGUNJAR-4-2.jpg.webp"
+                    alt="image4"
+                    class="home__img"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
