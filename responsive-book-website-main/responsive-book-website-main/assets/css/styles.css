@@ -75,6 +75,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background-color .4s;
+  font-family: 'Playfair Display', serif;
 }
 
 input,
@@ -374,6 +375,7 @@ img {
 .home__title{
   font-size: var(--biggest-font-size);
   margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .home__description{
@@ -382,6 +384,8 @@ img {
 
 .home__images{
   display: grid;
+  height: fit-content;
+  width: fit-content;
 }
 
 .home__article,.home__img{
@@ -391,6 +395,12 @@ img {
 
 .home__article{
   scale: .8;
+}
+
+.inspo_para{
+  font-size: 20px;
+  font-family: Georgia;
+  text-align: center;
 }
 
 /* Swiper class */
