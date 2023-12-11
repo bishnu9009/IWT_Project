@@ -472,6 +472,13 @@ body.dark-theme{
 }
 
 /*=============== FEATURED ===============*/
+
+/* ======Inspitration===== */
+.inspiration_image{
+  padding-bottom: auto;
+}
+
+
 .featured__card{
   position: relative;
   text-align: center;
