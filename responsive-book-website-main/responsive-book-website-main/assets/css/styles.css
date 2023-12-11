@@ -229,9 +229,9 @@ body.dark-theme{
   transition: color .4s;
 }
 
-.nav__link span{
+/* .nav__link span{
   display: none;
-}
+} */
 
 .nav__link i{
   font-size: 1.25rem;
