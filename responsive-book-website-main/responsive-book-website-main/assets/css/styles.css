@@ -74,7 +74,7 @@ body {
   color: var(--text-color);
   transition: background-color .4s;
   width: auto;
-  background-image: url("/responsive-book-website-main/responsive-book-website-main/assets/img/WhatsApp\ Image\ 2023-12-14\ at\ 13.52.40_00098821.jpg");
+  /* background-image: url("/responsive-book-website-main/responsive-book-website-main/assets/img/WhatsApp\ Image\ 2023-12-14\ at\ 13.52.40_00098821.jpg"); */
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -233,9 +233,9 @@ body.dark-theme{
   transition: color .4s;
 }
 
-/* .nav__link span{
+.nav__link span{
   display: none;
-} */
+}
 
 .nav__link i{
   font-size: 1.25rem;

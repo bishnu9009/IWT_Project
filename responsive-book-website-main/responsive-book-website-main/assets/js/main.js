@@ -51,7 +51,7 @@ let swiperHome = new Swiper('.home__swiper', {
     loop: true,
     spaceBetween: -24,
     grabCursor: true,
-    slidesPerView:'5',
+    slidesPerView:'7',
     centeredSlides: 'auto',
     
     autoplay:{
