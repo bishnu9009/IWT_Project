@@ -74,6 +74,13 @@ body {
   color: var(--text-color);
   transition: background-color .4s;
   width: auto;
+  background-image: url("/responsive-book-website-main/responsive-book-website-main/assets/img/WhatsApp\ Image\ 2023-12-14\ at\ 13.52.40_00098821.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background: 0.2;
 }
 
 input,
