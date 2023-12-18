@@ -689,6 +689,56 @@ body.dark-theme{
   cursor: pointer;
 }
 
+
+/*=============== CONTACT US ===============*/
+.contact__container{
+  position: relative;
+  padding-block: 3rem;
+}
+
+.contact__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact__data{
+ position: relative; 
+}
+
+.contact__title{
+  color: var(--white-color);
+}
+
+.contact__form{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact__input{
+  padding: 1.25rem 1rem;
+  background-color: var(--body-color);
+  color: var(--title-color);
+  transition: background-color .4s;
+}
+
+.contact__input::placeholder{
+  color: var(--text-color);
+}
+
+.contact__button{
+  padding-block: 1.25rem;
+  cursor: pointer;
+}
+
+
+
+
+
 /*=============== TESTIMONIAL ===============*/
 
 
