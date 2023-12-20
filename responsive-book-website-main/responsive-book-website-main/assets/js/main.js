@@ -198,3 +198,10 @@ sr.reveal(`.home__images`,{delay:600})
 sr.reveal(`.services__card`,{interval:100})
 sr.reveal(`.discount__data`,{origin:'left'})
 sr.reveal(`.discount__images`,{origin:'right'})
+
+
+// To Show the alert for forgot password
+function showAlert(message) {
+    // Display an alert box with a message
+    alert(message);
+}
