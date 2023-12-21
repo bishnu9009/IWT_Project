@@ -1,55 +1,1029 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shop</title>
-</head>
-<body>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script>
-        let cartCount = 0;
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/store-line.png" type="image/x-icon">
 
-        function addToCart(productId) {
-            cartCount++;
-            document.getElementById('cart-count').innerText = cartCount;
-            alert(`Product ${productId} added to cart!`);
-        }
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Artisan Avenue</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               ARTISAN AVENUE
+            </a>
+            <div class="nav__menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link active-link">
+                        <i class="ri-home-line"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="inspiration.html" class="nav__link">
+                        <i class="ri-community-line"></i>
+                        <span>Inspiration</span>
+                     </a>
+                  </li><li class="nav__item">
+                     <a href="#shop" class="nav__link">
+                        <i class="ri-store-3-line"></i>
+                        <span>Shop</span>
+                     </a>
+                  </li><li class="nav__item">
+                     <a href="about.html" class="nav__link">
+                        <i class="ri-user-line"></i>
+                        <span>About</span>
+                     </a>
+                  </li><li class="nav__item">
+                     <a href="contact.html" class="nav__link">
+                        <i class="ri-mail-send-line"></i>
+                        <span>Contact Us</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <!-- Search Button -->
+               <i class="ri-search-2-line search-button" id="search-button"></i>
+
+               <!-- Login Button -->
+               <i class="ri-user-3-line login-button" id="login-button"></i>
+
+               <!-- Theme Button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="ri-search-2-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+         <i class="ri-close-fill search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+            
+            <div class="login__group grid">
+               <div>
+                  <label for="login-email" class="login__label">E-Mail</label>
+                  <input type="email" placeholder="Enter your E-Mail: " id="login-email" class="login__input">
+               </div>
+
+               <div>
+                  <label for="login-pass" class="login__label">Password</label>
+                  <input type="password" placeholder="Enter your Password" id="login-pass" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <span class="login__signup">
+                  Don't have an account ?<a href="sign_up.html">Sign Up</a>
+               </span>
+
+               <a href="forgot_pass.html" class="login__forgot">Forgot Password?</a>
+
+               <button type="submit" class="login__button button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h1 class="section__title">
+                     The Products are Filtered by Catagories.
+                  </h1>
+               </div>
+        </section>
+
+         <!--==================== SHOP BY CATAGORIES ====================-->
+         
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Warli Paintings
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/5.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/6.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/9.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/10.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/4.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/1.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Pattachitra Paintings
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/5.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/6.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/9.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/10.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/4.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/1.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Madhubhani Paintings
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/5.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/6.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/9.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/10.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/4.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/1.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Gond Paintings
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/5.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/6.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/9.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/10.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/4.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/1.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Mysore Paintings
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/5.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/6.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/9.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/10.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/4.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/1.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+               Rajput Paintings
+            </h2>
+
+            <div class="featured__container container">
+               <div class="featured__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- Articles which are being featured... -->
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/5.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/6.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/9.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/10.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/4.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                        <img src="assets/img/products/1.jpg" alt="image" class="featured__img">
+                        <h2 class="featured__title">Featured Art 1 (Insert real name)</h2>
+                        <div class="featured__prices">
+                           <span class="featured__discount">$11.99</span>
+                           <span class="featured__price">$19.99</span>
+                        </div>
+
+                        <button class="button">View Details</button><br><br>
+                        <button class="button">Add to Cart</button>
+                        
+                        <div class="featured__actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         
         
-    </script>
+      </main>
 
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <a href="#" class="footer__logo">
+                  Artisan Avenue
+               </a>
+               <p class="footer__description">
+                  All Rights Reserved.
+               </p>
+            </div>
+            <div class="footer__data grid">
+               <div>
+                  <h3 class="footer__title">About</h3>
+                     <ul class="footer__link">
+                        <li>
+                           <a href="#" class="footer__link">FAQs</a>
+                        </li>
 
+                        <li>
+                           <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
 
-    <header>
-        <h1>Online Shop</h1>
-        <div id="cart">
-            <span id="cart-count">0</span>
-        </div>
-    </header>
+                        <li>
+                           <a href="#" class="footer__link">Terms of Services</a>
+                        </li>
 
-    <section id="products">
-        <div class="product" id="product-1">
-            <img src="laptop.jpg" alt="Laptop">
-            <h2>Laptop</h2>
-            <p>Price: $999</p>
-            <button onclick="addToCart(1)">Add to Cart</button>
-        </div>
+                        <!-- <li> use as placeholder in case any more page is added.
+                           <a href="#" class="footer__link"></a>
+                        </li> -->
+                     </ul>
+               </div>
+               
+               <div>
+                  <h3 class="footer__title">Socials</h3>
+                     <ul class="footer__link">
+                        <li>
+                           <i class="ri-instagram-line"></i>
+                           <a href="#" class="footer__link">Instagram</a>
+                        </li>
 
-        <div class="product" id="product-2">
-            <img src="smartphone.jpg" alt="Smartphone">
-            <h2>Smartphone</h2>
-            <p>Price: $499</p>
-            <button onclick="addToCart(2)">Add to Cart</button>
-        </div>
+                        <li>
+                           <i class="ri-facebook-circle-line"></i>
+                           <a href="#" class="footer__link">Facebook</a>
+                        </li>
 
-        <div class="product" id="product-3">
-            <img src="camera.jpg" alt="Camera">
-            <h2>Camera</h2>
-            <p>Price: $699</p>
-            <button onclick="addToCart(3)">Add to Cart</button>
-        </div>
-    </section>
+                        <li>
+                           <i class="ri-twitter-x-line"></i>
+                           <a href="#" class="footer__link">X</a>
+                        </li>
+                        
+                        <li>
+                           <i class="ri-youtube-line"></i>
+                           <a href="#" class="footer__link">YouTube</a>
+                        </li>
+                     </ul>
 
-    <script src="script.js"></script>
-</body>
+               </div>
+               
+               <div>
+                  <h3 class="footer__title">Contact Us</h3>
+                     <ul class="footer__link">
+                        <li>
+                           <a href="#" class="footer__link">Chat With Us</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Email Us</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Phone</a>
+                        </li>
+                        
+                        <li>
+                           <a href="#" class="footer__link">Locate Us</a>
+                        </li>
+                     </ul>
+                  
+               </div>
+               
+               <!-- <div>
+                  <h3 class="footer__title">
+                     <ul class="footer__link">
+                        <li>
+                           <a href="#" class="footer__link"></a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link"></a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link"></a>
+                        </li>
+                        
+                        <li>
+                           <a href="#" class="footer__link"></a>
+                        </li>
+                     </ul>
+                  </h3>
+               </div> -->
+            </div>   
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
