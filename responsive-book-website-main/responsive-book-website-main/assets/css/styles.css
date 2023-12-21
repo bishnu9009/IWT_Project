@@ -225,7 +225,7 @@ body.dark-theme{
 
 .nav__list{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav__link{
@@ -234,7 +234,7 @@ body.dark-theme{
 }
 
 .nav__link span{
-  display: none;
+  display:contents;
 }
 
 .nav__link i{
@@ -484,6 +484,7 @@ body.dark-theme{
 
 
 .featured__card{
+  height: 550px;
   position: relative;
   text-align: center;
   background-color: var(--container-color);
